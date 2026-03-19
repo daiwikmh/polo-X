@@ -16,19 +16,19 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
+        { text: "YO ", highlight: false },
+        { text: "PROTOCOL", highlight: false },
+      ],
+      description: "ERC-4626 vaults on Base — yoUSD, yoETH, yoBTC, yoEUR. The yield layer POLO continuously monitors and optimizes across.",
+      align: "left",
+    },
+        {
+      number: "02",
+      titleParts: [
         { text: "LI.FI ", highlight: false },
         { text: "ROUTING", highlight: true },
       ],
       description: "Cross-chain bridge routing via LI.FI. Real quotes, fee-aware decisions, and optimal path selection when moving assets between chains to a better-yielding vault.",
-      align: "left",
-    },
-    {
-      number: "02",
-      titleParts: [
-        { text: "YO ", highlight: false },
-        { text: "PROTOCOL", highlight: true },
-      ],
-      description: "ERC-4626 vaults on Base — yoUSD, yoETH, yoBTC, yoEUR. The yield layer POLO continuously monitors and optimizes across.",
       align: "right",
     },
     {

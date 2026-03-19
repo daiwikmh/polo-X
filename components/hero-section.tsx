@@ -47,9 +47,7 @@ export function HeroSection() {
 
       {/* Main content */}
       <div ref={contentRef} className="flex-1 w-full">
-        <div className="mb-6 flex items-center gap-4">
-          <Image src="/pin.jpg" alt="Brahma logo" width={48} height={48} className="rounded-sm" />
-        </div>
+      
 
         <SplitFlapAudioProvider>
           <div className="relative">

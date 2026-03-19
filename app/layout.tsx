@@ -18,9 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "BRAHMA — Autonomous Cross-Chain Yield Agent",
+  title: "Polo — Autonomous Cross-Chain Yield Agent",
   description:
-    "brahma scans USDC yields across Base, Arbitrum, Optimism, and Polygon — then moves your capital to the highest-earning Aave V3 pool automatically via LI.FI.",
+    "Polo scans USDC yields across Base, Ethereum — then moves your capital to the highest-earning Aave V3 pool automatically via LI.FI.",
   generator: "v0.app",
   // icons: {
   //   icon: [

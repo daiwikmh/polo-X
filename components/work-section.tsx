@@ -9,40 +9,28 @@ gsap.registerPlugin(ScrollTrigger)
 
 const experiments = [
   {
-    title: "TEE Matching Engine",
-    medium: "Intel TDX / EigenCompute",
-    description: "Price-time priority matching engine written in Rust, running inside an Intel TDX enclave on EigenCompute. The order book exists only in encrypted memory — unreadable by the operator.",
+    title: "Yielder Agent",
+    medium: "Autonomous Yield Optimization",
+    description: "Scans YO vault positions every 90 seconds. Deposits idle tokens, redeems underperformers, and bridges cross-chain via LI.FI — targeting vaults above 2% 7-day APY.",
     span: "col-span-2 row-span-2",
   },
   {
-    title: "SdpSettlement",
-    medium: "Solidity / Foundry",
-    description: "On-chain settlement contract deployed on Sepolia. Only accepts calls from the TEE wallet. Executes swaps through Uniswap v3 and records every fill on-chain.",
+    title: "Guardian Agent",
+    medium: "Risk Monitoring",
+    description: "Watches vault health in real time — share price, APY anomalies, paused state, TVL. Triggers emergency redeems before damage occurs.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "Flashbots Relay",
-    medium: "Flashbots Sepolia",
-    description: "Signed bundles bypass the public mempool entirely. Miners and searchers cannot observe or front-run fills. Settlement is atomic — all-or-nothing.",
-    span: "col-span-1 row-span-2",
-  },
-  {
-    title: "Slippage Simulator",
-    medium: "revm / mini-EVM",
-    description: "Every fill is pre-screened against live Sepolia state before broadcast. Fills with >0.5% slippage are dropped automatically — before any transaction is signed.",
+    title: "Non-Custodial",
+    medium: "Biconomy Session Keys",
+    description: "Connect your wallet or use smart account session keys — the agent executes on your behalf without ever holding your private keys.",
     span: "col-span-1 row-span-1",
   },
   {
-    title: "Chainlink Price Feed",
-    medium: "ETH/USD Oracle",
-    description: "Canonical ETH/USD reference price from Chainlink. Used to validate fill prices and detect manipulation before the TEE wallet signs a settlement.",
+    title: "SIM / LIVE Toggle",
+    medium: "Dashboard Mode",
+    description: "Switch between dry-run simulation and live mainnet execution from the same dashboard, no redeployment needed.",
     span: "col-span-2 row-span-1",
-  },
-  {
-    title: "TDX Attestation",
-    medium: "EigenCompute Verifiable Build",
-    description: "Anyone can verify the deployed matching binary was compiled from the public repo using Intel TDX remote attestation. No trust assumptions required.",
-    span: "col-span-1 row-span-1",
   },
 ]
 
@@ -98,11 +86,11 @@ export function WorkSection() {
       {/* Section header */}
       <div ref={headerRef} className="mb-16 flex items-end justify-between">
         <div>
-          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Architecture</span>
-          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">SYSTEM MODULES</h2>
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">02 / Features</span>
+          <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">FEATURES</h2>
         </div>
         <p className="hidden md:block max-w-xs font-mono text-xs text-muted-foreground text-right leading-relaxed">
-          Price-time priority matching in a TEE. Settled atomically through Flashbots. Never touches the public mempool.
+          Two autonomous agents — Yielder and Guardian — running 24/7 on top of YO Protocol ERC-4626 vaults on Base.
         </p>
       </div>
 

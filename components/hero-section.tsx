@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 import { ScrambleTextOnHover } from "@/components/scramble-text"
 import { SplitFlapText, SplitFlapMuteToggle, SplitFlapAudioProvider } from "@/components/split-flap-text"
 import { AnimatedNoise } from "@/components/animated-noise"
@@ -40,15 +41,19 @@ export function HeroSection() {
       {/* Left vertical labels */}
       <div className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2">
         <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground -rotate-90 origin-left block whitespace-nowrap">
-          DARK POOL
+          DEFI YIELD
         </span>
       </div>
 
       {/* Main content */}
       <div ref={contentRef} className="flex-1 w-full">
+        <div className="mb-6 flex items-center gap-4">
+          <Image src="/pin.jpg" alt="Brahma logo" width={48} height={48} className="rounded-sm" />
+        </div>
+
         <SplitFlapAudioProvider>
           <div className="relative">
-            <SplitFlapText text="SHADOW" speed={80} />
+            <SplitFlapText text="POLO" speed={80} />
             <div className="mt-4">
               <SplitFlapMuteToggle />
             </div>
@@ -56,16 +61,16 @@ export function HeroSection() {
         </SplitFlapAudioProvider>
 
         <h2 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
-          TRADE IN THE DARK. SETTLE ON-CHAIN.
+          AUTONOMOUS DEFI YIELD MANAGEMENT
         </h2>
 
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
-          Shadow is a trustless dark pool for ETH/USDC. Orders are matched inside a TEE — invisible to everyone, including the operator — and settled atomically through Flashbots with zero mempool exposure.
+          POLO finds the best rates across YO Protocol vaults, moves your assets when the math says to, and pulls them out if a vault goes wrong.
         </p>
 
         <div className="mt-16 flex items-center gap-8">
           <a
-            href="https://shadow-alpha-beryl.vercel.app/"
+            href="https://brahma-five.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 border border-foreground/20 px-6 py-3 font-mono text-xs uppercase tracking-widest text-foreground hover:border-accent hover:text-accent transition-all duration-200"

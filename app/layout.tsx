@@ -18,9 +18,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "shadow - Smart Trading Terminal",
+  title: "BRAHMA — Autonomous Cross-Chain Yield Agent",
   description:
-    "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
+    "brahma scans USDC yields across Base, Arbitrum, Optimism, and Polygon — then moves your capital to the highest-earning Aave V3 pool automatically via LI.FI.",
   generator: "v0.app",
   // icons: {
   //   icon: [

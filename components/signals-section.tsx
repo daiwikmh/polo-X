@@ -9,29 +9,19 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
-    date: "2026.02.20",
-    title: "Submit Order",
-    note: "Your order enters an encrypted order book inside an Intel TDX enclave on EigenCompute. No one can see it — not miners, not the operator, not us.",
+    date: "STEP 01",
+    title: "Scan",
+    note: "Monitors wallet balances and YO vault positions every 90 seconds — tracking APY, TVL, share price, and vault health across chains.",
   },
   {
-    date: "2026.02.15",
-    title: "Match Off-Chain",
-    note: "A price-time priority engine matches orders in real time. Before any fill is broadcast, an on-chain simulation checks slippage and reverts — bad fills are dropped before they ever reach a validator.",
+    date: "STEP 02",
+    title: "Decide",
+    note: "Yielder Agent picks the optimal move: deposit, redeem, bridge, or hold. Guardian Agent scores vault risk and triggers emergency redeems if a vault goes critical.",
   },
   {
-    date: "2026.02.08",
-    title: "Settle on Flashbots",
-    note: "The TEE wallet signs and sends a Flashbots bundle. The transaction skips the public mempool entirely. Your swap executes atomically on Uniswap v3 with no front-running risk.",
-  },
-  {
-    date: "2026.01.30",
-    title: "Slippage Guard",
-    note: ">0.5% slippage aborts the fill before broadcast. Every fill is pre-screened against live Sepolia state using a revm fork — the TEE wallet never signs a bad fill.",
-  },
-  {
-    date: "2026.01.18",
-    title: "Verified Build",
-    note: "Anyone can verify the deployed matching binary was compiled from a specific open-source commit using Intel TDX remote attestation via EigenCompute.",
+    date: "STEP 03",
+    title: "Execute",
+    note: "Deposits into the highest-yielding YO vault, bridges cross-chain via LI.FI when the improvement justifies the cost, or redeems instantly on a risk event.",
   },
 ]
 

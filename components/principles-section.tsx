@@ -16,37 +16,37 @@ export function PrinciplesSection() {
     {
       number: "01",
       titleParts: [
-        { text: "PRE-TRADE ", highlight: false },
-        { text: "PRIVACY", highlight: true },
+        { text: "LI.FI ", highlight: false },
+        { text: "ROUTING", highlight: true },
       ],
-      description: "Orders never leave the enclave until settlement. The order book exists only in TEE-encrypted memory. No public order book. No pre-trade information leakage — for any participant.",
+      description: "Cross-chain bridge routing via LI.FI. Real quotes, fee-aware decisions, and optimal path selection when moving assets between chains to a better-yielding vault.",
       align: "left",
     },
     {
       number: "02",
       titleParts: [
-        { text: "MEV ", highlight: false },
-        { text: "PROTECTION", highlight: true },
+        { text: "YO ", highlight: false },
+        { text: "PROTOCOL", highlight: true },
       ],
-      description: "Every fill is sent through the Flashbots Sepolia relay. Transactions never enter the public mempool. Miners and searchers cannot observe, front-run, or sandwich any trade.",
+      description: "ERC-4626 vaults on Base — yoUSD, yoETH, yoBTC, yoEUR. The yield layer POLO continuously monitors and optimizes across.",
       align: "right",
     },
     {
       number: "03",
       titleParts: [
-        { text: "TRUSTLESS ", highlight: false },
-        { text: "EXECUTION", highlight: true },
+        { text: "BICONOMY ", highlight: false },
+        { text: "KEYS", highlight: true },
       ],
-      description: "Intel TDX attestation proves the matching logic is unmodified. Anyone can verify the deployed binary was compiled from a specific open-source commit. Not even the operator can tamper with fills.",
+      description: "Smart account session keys let Yielder and Guardian execute on your behalf without holding your private keys — fully non-custodial.",
       align: "left",
     },
     {
       number: "04",
       titleParts: [
-        { text: "ON-CHAIN ", highlight: false },
-        { text: "SETTLEMENT", highlight: true },
+        { text: "ERC-", highlight: false },
+        { text: "4626", highlight: true },
       ],
-      description: "Every fill settles as a real Uniswap v3 swap on Sepolia. The SdpSettlement contract only accepts calls from the TEE wallet. No external actor can trigger or suppress a settlement.",
+      description: "Tokenized vault standard underpinning every YO Protocol position — enabling composable, auditable yield strategies across Base and beyond.",
       align: "right",
     },
   ]
@@ -93,8 +93,8 @@ export function PrinciplesSection() {
     <section ref={sectionRef} id="principles" className="relative py-32 pl-6 md:pl-28 pr-6 md:pr-12">
       {/* Section header */}
       <div ref={headerRef} className="mb-24">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Principles</span>
-        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">WHY SHADOW</h2>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">03 / Powered By</span>
+        <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">POWERED BY</h2>
       </div>
 
       {/* Staggered principles */}

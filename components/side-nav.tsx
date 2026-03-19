@@ -4,10 +4,10 @@ import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { id: "hero", label: "Shadow" },
+  { id: "hero", label: "POLO" },
   { id: "signals", label: "How It Works" },
-  { id: "work", label: "Architecture" },
-  { id: "principles", label: "Why Shadow" },
+  { id: "work", label: "Features" },
+  { id: "principles", label: "Powered By" },
   { id: "colophon", label: "Tech Stack" },
 ]
 

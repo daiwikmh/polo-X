@@ -189,7 +189,7 @@ function SplitFlapChar({ char, index, animationKey, skipEntrance, speed, playCli
 
   const tileDelay = 0.15 * index
 
-  const bgColor = isSettled ? "#1A46F6" : "#1A46F6"
+  const bgColor = isSettled ? "#e0177c" : "#e0177c"
   const textColor = isSettled ? "#FFFFFF" : "#FFFFFF"
 
   useEffect(() => {

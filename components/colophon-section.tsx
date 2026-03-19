@@ -75,7 +75,7 @@ export function ColophonSection() {
     >
       {/* Section header */}
       <div ref={headerRef} className="mb-16">
-        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">04 / Colophon</span>
+        <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">04 / Stack</span>
         <h2 className="mt-4 font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">TECH STACK</h2>
       </div>
 
@@ -85,9 +85,9 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Protocols</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Uniswap v3</li>
-            <li className="font-mono text-xs text-foreground/80">Flashbots Relay</li>
-            <li className="font-mono text-xs text-foreground/80">EigenCompute</li>
+            <li className="font-mono text-xs text-foreground/80">YO Protocol</li>
+            <li className="font-mono text-xs text-foreground/80">LI.FI</li>
+            <li className="font-mono text-xs text-foreground/80">Biconomy</li>
           </ul>
         </div>
 
@@ -95,19 +95,20 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Stack</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Rust / Axum</li>
+            <li className="font-mono text-xs text-foreground/80">Python</li>
             <li className="font-mono text-xs text-foreground/80">Next.js</li>
-            <li className="font-mono text-xs text-foreground/80">Solidity / Foundry</li>
+            <li className="font-mono text-xs text-foreground/80">TypeScript</li>
           </ul>
         </div>
 
-        {/* AI Models */}
+        {/* Vaults */}
         <div className="col-span-1">
-          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Infra</h4>
+          <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Vaults</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Intel TDX TEE</li>
-            <li className="font-mono text-xs text-foreground/80">Chainlink ETH/USD</li>
-            <li className="font-mono text-xs text-foreground/80">revm / mini-EVM</li>
+            <li className="font-mono text-xs text-foreground/80">yoUSD</li>
+            <li className="font-mono text-xs text-foreground/80">yoETH</li>
+            <li className="font-mono text-xs text-foreground/80">yoBTC</li>
+            <li className="font-mono text-xs text-foreground/80">yoEUR</li>
           </ul>
         </div>
 
@@ -115,8 +116,9 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Network</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Sepolia Testnet</li>
-            <li className="font-mono text-xs text-foreground/80">ETH / USDC</li>
+            <li className="font-mono text-xs text-foreground/80">Base (8453)</li>
+            <li className="font-mono text-xs text-foreground/80">Ethereum (soon)</li>
+            <li className="font-mono text-xs text-foreground/80">Arbitrum (soon)</li>
           </ul>
         </div>
 
@@ -159,9 +161,9 @@ export function ColophonSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 Shadow. All rights reserved.
+          © 2026 POLO. Built on YO Protocol.
         </p>
-        <p className="font-mono text-[10px] text-muted-foreground">Contract: 0xB1F0214E2277c2843A9D2d90cCEAd664d19C9f71 · Sepolia</p>
+        <p className="font-mono text-[10px] text-muted-foreground">Autonomous DeFi Yield Management · Powered by YO Protocol + LI.FI</p>
       </div>
     </section>
   )
